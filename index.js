@@ -4,7 +4,7 @@ const precioTicket=200;
 function resumen() {
     var cantidadTicket=document.getElementById("inputCantidad").value;
     var descuento=document.getElementById("inputCategoria").value;
-    var precio=cantidadTicket * (precioTicket - ((precioTicket * descuento) / 200));
+    var precio=cantidadTicket * (precioTicket - ((precioTicket * descuento) / 100));
  
      return document.getElementById("compraTotal").value= "Total a pagar: $" + precio;
 
